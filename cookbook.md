@@ -1,4 +1,4 @@
-This cookbook describes all the variables.
+This cookbook describes all the variables in run_analysis.R
 
 # Variables
 
