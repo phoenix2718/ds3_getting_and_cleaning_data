@@ -23,14 +23,14 @@ The R script can be divided **7** parts in order.
 In this part, the R script reads files using the **read.table** function.
 
 * The **features** variable is used to name columns of the test and the train data sets.
-* The **data_test** variable is a data set that stores the 561 different data from accelerometers and gyroscopes of subjects in test group.
-* The **data_train** variable is a data set that stores the 561 different data from accelerometers and gyroscopes of subjects in train group.
+* The **data_test** variable is a data frame that stores the 561 different data from accelerometers and gyroscopes of subjects in test group.
+* The **data_train** variable is a data frame that stores the 561 different data from accelerometers and gyroscopes of subjects in train group.
 
 
 ## Part 2
-In this part, the R script merge data sets - abot of test and those of train using **rbind**.
+In this part, the R script merges data frames of test and those of train using **rbind**.
 
-* Three data sets - **data_merged**, **label_merged**, and **subject_merged** -  are merged into in this part.
+* Three data frames - **data_merged**, **label_merged**, and **subject_merged** -  are merged into in this part.
 
 ## Part 3
 In this part, the R script extracts only the measurements on the mean and standard deviation for each measurement.
@@ -53,7 +53,7 @@ In this part, the R script creates a second, independent tidy data set with the 
 
 * First, the script adds the **subject** column to the **data_merged_ms** data frame.
 * Second, load the **dplyr** package. If the package has not been installed, then it is installed and then load it.
-* Third, using the **group_by** function, a data set grouped by each activity and each subject is created.
+* Third, using the **group_by** function, a data frame grouped by each activity and each subject is created.
 * Lastly, the **summarise_each** function returns a data frame with each mean of each group. The data frame is assigned to the **data_group_mean** variable.
 
 ## Part 7
