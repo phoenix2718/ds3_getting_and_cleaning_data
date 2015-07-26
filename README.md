@@ -31,7 +31,7 @@ In this part, the R script reads files using the **read.table** function.
 * the **subject_train** variable is a data frame that stores the particular indices of subjects in the train group who perform activities.
 
 ## Part 2
-In this part, the R script merges data frames of test and those of train using **rbind**. The three data frames - **data_merged**, **label_merged**, and **subject_merged** -  are merged into in this part.
+In this part, the R script merges data frames of test and those of train using **rbind**. The three merged data frames - **data_merged**, **label_merged**, and **subject_merged** -  are created in this part.
 
 ## Part 3
 In this part, the R script extracts only the measurements on the mean and standard deviation for each measurement.
