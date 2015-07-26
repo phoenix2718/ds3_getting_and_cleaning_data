@@ -25,8 +25,16 @@ In this part, the R script reads files using the **read.table** function.
 
 
 ## Part 2
+In this part, the R script merge data sets - abot of test and those of train using **rbind**.
+
+Three data sets are merged in this part.
 
 ## Part 3
+In this part, extracts only the measurements on the mean and standard deviation for each measurement.
+
+The **grep** function is used to find indices of features in the **features** variable, which contain "mean()" or "std()".
+
+Then, select the columns about mean and standard deviation from **data_merged** and store it in **data_merged_ms**.
 
 ## Part 4
 
