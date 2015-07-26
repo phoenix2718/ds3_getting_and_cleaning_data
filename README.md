@@ -23,9 +23,12 @@ The R script can be divided **7** parts in order.
 In this part, the R script reads files using the **read.table** function.
 
 * The **features** variable is used to name columns of the test and the train data sets.
-* The **data_test** variable is a data frame that stores the 561 different data from accelerometers and gyroscopes of subjects in test group.
-* The **data_train** variable is a data frame that stores the 561 different data from accelerometers and gyroscopes of subjects in train group.
-
+* The **data_test** variable is a data frame that stores the 561 different data in a row from accelerometers and gyroscopes of subjects in the test group.
+* The **data_train** variable is a data frame that stores the 561 different data in a row from accelerometers and gyroscopes of subjects in the train group.
+* The **label_test** variable is a data frame that stores the labels of activities by subjects in the test group.
+* The **label_train** variable is a data frame that stores the labels of activities by subjects in the train group.
+* the **subject_test** variable is a data frame that stores the particular indices of subjects in the test group who perform activities.
+* the **subject_train** variable is a data frame that stores the particular indices of subjects in the train group who perform activities.
 
 ## Part 2
 In this part, the R script merges data frames of test and those of train using **rbind**.
