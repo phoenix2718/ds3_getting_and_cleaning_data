@@ -3,54 +3,54 @@ This cookbook describes all the variables.
 # Variables
 
 ## features
-Features of data that are gathered from subjects
+The data frame that contains features of data that are gathered from subjects
 * class : data.frame
 * dim : 561 x 2
 * features[,1] : ordered integers beginning with 1
 * features[,2] : names of features which are the column names of data_test and data_train
 
 ## data_test
-The data set that stores the data from subjects the test group
+The data frame that stores the data from subjects the test group
 * class : data.frame
 * dim : 2947 x 561
 
 ## data_train
-The data set that stores the data from subjects the train group
+The data frame that stores the data from subjects the train group
 * class : data.frame
 * dim : 7352 x 561
 
 ## label_test
-The data set that stores labels of activities which are correspondent with each row of data_test
+The data frame that stores labels of activities which are correspondent with each row of data_test
 * class : data.frame
 * dim : 2947 x 1
 
 ## label_train
-The data set that stores labels of activities which are correspondent with each row of data_train
+The data frame that stores labels of activities which are correspondent with each row of data_train
 * class : data.frame
 * dim : 7352 x 1
 
 ## subject_test
-The data set that stores indices of subjects which are correspondent with each row of data_test
+The data frame that stores indices of subjects which are correspondent with each row of data_test
 * class : data.frame
 * dim : 2947 x 1
 
 ## subject_train
-The data set that stores indices of subjects which are correspondent with each row of data_test
+The data frame that stores indices of subjects which are correspondent with each row of data_test
 * class : data.frame
 * dim : 7352 x 1
 
 ## data_merged
-The data set that is merged from data_test and data_train, which is created by attaching data_train to the end of data_test
+The data frame that is merged from data_test and data_train, which is created by attaching data_train to the end of data_test
 * class : data.frame
 * dim : 10299 x 561
 
 ## label_merged
-The data set that is merged from label_test and label_train, which is created by attaching label_train to the end of label_test
+The data frame that is merged from label_test and label_train, which is created by attaching label_train to the end of label_test
 * class : data.frame
 * dim : 10299 x 1
 
 ## subject_merged
-The data set that is merged from subject_test and subject_train, which is created by attaching subject_train to the end of subject_test
+The data frame that is merged from subject_test and subject_train, which is created by attaching subject_train to the end of subject_test
 * class : data.frame
 * dim : 10299 x 1
 
@@ -75,7 +75,7 @@ The character vector to which label_merged is converted following the correspond
 * length : 10299
 
 ## data_merged_ms
-The data set that is extracted from data_merged by selecting every column which stands for mean or standard deviation
+The data frame that is extracted from data_merged by selecting every column which stands for mean or standard deviation
 * class : data.frame
 * dim : 10299 x 68
 
