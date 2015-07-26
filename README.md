@@ -46,7 +46,7 @@ Label 1 is correspondent to "WALKING", 2 to "WALING_UPSTAIRS", 3 to "WALKING_DOW
 
 The **unlist** function is used to convert a list to a vector.
 
-Descriptive activity variable is attached to the data set **data_merged_ms**.
+Descriptive activity variable is attached to the **data_merged_ms** data set.
 
 ## Part 6
 In this part, the R script creates a second, independent tidy data set with the average of each variable for each activity and each subject. The script uses the **dplyr** package to group rows by each activity and each subject.
