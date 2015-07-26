@@ -30,17 +30,27 @@ In this part, the R script merge data sets - abot of test and those of train usi
 Three data sets are merged in this part.
 
 ## Part 3
-In this part, extracts only the measurements on the mean and standard deviation for each measurement.
+In this part, the R script extracts only the measurements on the mean and standard deviation for each measurement.
 
 The **grep** function is used to find indices of features in the **features** variable, which contain "mean()" or "std()".
 
 Then, select the columns about mean and standard deviation from **data_merged** and assign it to **data_merged_ms**.
 
 ## Part 4
+In this part, the R script generates descriptive activity names from the manual.
 
 ## Part 5
+In this part, the R script appropriately labels the data set with descriptive variable names.
+
+Label 1 is correspondent to "WALKING", 2 to "WALING_UPSTAIRS", 3 to "WALKING_DOWNSTAIRS", 4 to "SITTING", 5 to "STANDING", and 6 to "LAYING".
+
+The **unlist** function is used to convert a list to a vector.
+
+Descriptive activity variable is attached to the data set **data_merged_ms**.
 
 ## Part 6
+
+
 
 ## PArt 7
 
