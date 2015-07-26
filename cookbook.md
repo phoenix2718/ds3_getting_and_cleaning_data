@@ -3,27 +3,35 @@ This cookbook describes all the variables.
 # Variables
 
 ## features
+The features of data that are gathered from subjects
 * class : data.frame
 * dim : 561 x 2
-
+* features[,1] : ordered integers beginning with 1
+* features[,2] : names of features which are the column names of data_test and data_train
 ## data_test
+The data set that stores the data from subjects the test group
 * class : data.frame
 * dim : 2947 x 561
 ## data_train
+The data set that stores the data from subjects the train group
 * class : data.frame
 * dim : 7352 x 561
 
 ## label_test
+The data set that stores labels of activities which are correspondent with each row of data_test
 * class : data.frame
 * dim : 2947 x 1
 ## label_train
+The data set that stores labels of activities which are correspondent with each row of data_train
 * class : data.frame
 * dim : 7352 x 1
 
 ## subject_test
+The data set that stores indices of subjects which are correspondent with each row of data_test
 * class : data.frame
 * dim : 2947 x 1
 ## subject_train
+The data set that stores indices of subjects which are correspondent with each row of data_test
 * class : data.frame
 * dim : 7352 x 1
 
