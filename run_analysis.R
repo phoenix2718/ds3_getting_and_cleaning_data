@@ -20,7 +20,7 @@ subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt") 
 
 #
-###
+### ============
 
 ### PART 2 =====
 # 1. Merges the training and the test sets to create one data set.
@@ -30,7 +30,7 @@ label_merged <- rbind(label_test, label_train)
 subject_merged <- rbind(subject_test, subject_train)
 
 #
-###
+### ============
 
 ### PART 3 =====
 # 2. Extracts only the measurements on 
@@ -42,7 +42,7 @@ index_std  <- grep("std()",  as.character(features[,2]), fixed=T)
 data_merged_ms <- data_merged[append(index_mean, index_std)]
 
 #
-###
+### ============
 
 ### PART 4 =====
 # 3. Uses descriptive activity names to name the activities in the data set
@@ -51,7 +51,7 @@ data_merged_ms <- data_merged[append(index_mean, index_std)]
 label_text <- c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
 
 #
-###
+### ============
 
 ### PART 5 =====
 # 4. Appropriately labels the data set with descriptive variable names.
@@ -61,7 +61,7 @@ label_text_merged <- label_text[as.numeric(unlist(label_merged))]
 data_merged_ms$activity <- label_text_merged
 
 #
-###
+### ============
 
 ### PART 6 =====
 # 5. From the data set in step 4, 
@@ -77,7 +77,7 @@ by_activity_subject <- group_by(data_merged_ms, activity, subject)
 data_group_mean <- summarise_each(by_activity_subject,funs(mean))
 
 #
-###
+### ============
 
 ### PART 7 =====
 # Writes the second data set as a txt file and removes all variables used in run_analysis.R.
@@ -86,4 +86,4 @@ write.table(data_group_mean, file="./data_group_mean.txt", row.names=F)
 # remove all variables.
 rm(features, data_test, data_train, label_test, label_train, label_text, subject_test, subject_train, index_mean, index_std, data_merged, label_merged, subject_merged, data_merged_ms, label_text_merged, by_activity_subject, data_group_mean)
 
-###
+### ============
