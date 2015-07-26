@@ -30,7 +30,7 @@ In this part, the R script reads files using the **read.table** function.
 ## Part 2
 In this part, the R script merge data sets - abot of test and those of train using **rbind**.
 
-Three data sets - **data_merged**, **label_merged**, and **subject_merged** -  are merged into in this part.
+* Three data sets - **data_merged**, **label_merged**, and **subject_merged** -  are merged into in this part.
 
 ## Part 3
 In this part, the R script extracts only the measurements on the mean and standard deviation for each measurement.
@@ -57,4 +57,4 @@ In this part, the R script creates a second, independent tidy data set with the 
 * Lastly, the **summarise_each** function returns a data frame with each mean of each group. The data frame is assigned to the **data_group_mean** variable.
 
 ## Part 7
-In this part, write **data_group_mean** as a txt file named "data_group_mean.txt" and remove all varaibles used in run_analysis.R.
+In this part, write **data_group_mean** as a txt file named "data_group_mean.txt" and remove all varaibles used in **run_analysis.R**.
