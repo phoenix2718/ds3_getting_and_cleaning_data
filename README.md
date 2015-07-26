@@ -17,7 +17,7 @@ The R script can be divided **7** parts in order.
   * Write
 
 ## Part 1
-This R script read files using the **read.table** function.
+In this part, the R script reads files using the **read.table** function.
 
 * The **feature** variable is used to name columns of the test and the train data sets.
 * The **data_test** variable is a data set that stores the 561 different data from accelerometers and gyroscopes of subjects in test group.
