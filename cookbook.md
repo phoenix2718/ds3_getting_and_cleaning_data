@@ -3,7 +3,7 @@ This cookbook describes all the variables.
 # Variables
 
 ## features
-The features of data that are gathered from subjects
+Features of data that are gathered from subjects
 * class : data.frame
 * dim : 561 x 2
 * features[,1] : ordered integers beginning with 1
@@ -40,6 +40,7 @@ The data set that stores indices of subjects which are correspondent with each r
 * dim : 7352 x 1
 
 ## data_merged
+A data set that is merged from data_test and data_train, which is created by attaching data_train to the end of data_test
 * class : data.frame
 * dim : 10299 x 561
 
