@@ -34,7 +34,7 @@ In this part, extracts only the measurements on the mean and standard deviation 
 
 The **grep** function is used to find indices of features in the **features** variable, which contain "mean()" or "std()".
 
-Then, select the columns about mean and standard deviation from **data_merged** and store it in **data_merged_ms**.
+Then, select the columns about mean and standard deviation from **data_merged** and assign it to **data_merged_ms**.
 
 ## Part 4
 
