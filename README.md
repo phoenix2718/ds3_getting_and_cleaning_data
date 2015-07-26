@@ -1,8 +1,8 @@
 This document is about how **run_analysis.R** works.
 
 The R script can be divided **7** parts in order.
+What the script does in each part.
 
-The script does in each part:
 1. Reads data sets from files.
   * Lines from 1 to 23
 2. Merges the training and the test sets
