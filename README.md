@@ -1,4 +1,4 @@
-This document is about how **run_analysis.R** works.
+This document describes how **run_analysis.R** works.
 
 The R script can be divided **7** parts in order.
 
