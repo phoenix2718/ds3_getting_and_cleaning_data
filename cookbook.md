@@ -13,7 +13,7 @@ The data frame that contains features of data that are gathered from subjects
 The data frame that stores the data from subjects the test group
 * class : data.frame
 * dim : 2947 x 561
-* the range of each data : numerics in [-1, 1]
+* the range of data : numerics in [-1, 1]
 
 ## data_train
 The data frame that stores the data from subjects the train group
