@@ -19,7 +19,7 @@ The R script can be divided **7** parts in order.
 ## Part 1
 In this part, the R script reads files using the **read.table** function.
 
-* The **feature** variable is used to name columns of the test and the train data sets.
+* The **features** variable is used to name columns of the test and the train data sets.
 * The **data_test** variable is a data set that stores the 561 different data from accelerometers and gyroscopes of subjects in test group.
 * The **data_train** variable is a data set that stores the 561 different data from accelerometers and gyroscopes of subjects in train group.
 
@@ -49,10 +49,15 @@ The **unlist** function is used to convert a list to a vector.
 Descriptive activity variable is attached to the data set **data_merged_ms**.
 
 ## Part 6
+In this part, the R script creates a second, independent tidy data set with the average of each variable for each activity and each subject. The script uses the **dplyr** package to group rows by each activity and each subject.
 
+First, the script adds the **subject** column to **data_merged_ms**.
 
+Second, load the **dplyr** package. If the package has not been installed, then it is installed and then load it.
 
-## PArt 7
+Third, using the **group_by** function, a data set grouped by each activity and each subject is created.
 
+Lastly, the **summarizse_each** function returns a data frame with each mean of each group. The data frame is assigned to the **data_group_mean** variable.
 
-Getting and Cleaning Data of Data Specialization in Courera
+## Part 7
+In this part, write **data_group_mean** as a txt file named "data_group_mean.txt" and remove all varaibles used in run_analysis.R.
