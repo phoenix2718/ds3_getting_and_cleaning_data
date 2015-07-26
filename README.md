@@ -1,6 +1,6 @@
-This document is about how run_analysis.R works.
+This document is about how **run_analysis.R** works.
 
-The R script can be divided ? parts in order.
+The R script can be divided **7** parts in order.
 
 1. Reading data sets from files.
   * Lines from 1 to 23
